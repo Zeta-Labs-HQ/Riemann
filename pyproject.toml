@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "riemann"
+version = "0.1.0"
+description = "Powerful abstraction for making discord bots in python on top of discord.py"
+authors = ["Sunrit Jana <warriordefenderz@gmail.com>", "Florian Chive <chive.florian@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/Zeta-Labs-HQ/Riemann"
+packages = [{ include = "riemann" }]
+
+[tool.taskipy.tasks]
+precommit = "pre-commit install"
+lint = "pre-commit run --all-files"
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+discord-py = {extras = ["speed", "voice"], version = "^2.1.0"}
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.10.3"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^5.0.4"
+flake8-annotations = "^2.9.1"
+flake8-bugbear = "^22.12.6"
+flake8-tidy-imports = "^4.8.0"
+flake8-future-annotations = "^1.0.0"
+flake8-simplify = "^0.19.3"
+flake8-async = "^22.11.14"
+pep8-naming = "^0.13.2"
+pyright = "^1.1.283"
+pre-commit = "^2.20.0"
+ipython = "^8.7.0"
+black = "^22.12.0"
+isort = "^5.10.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

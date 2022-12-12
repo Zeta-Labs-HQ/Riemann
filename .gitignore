@@ -1,0 +1,23 @@
+__pycache__/
+
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Environmental variables
+.env
+.env.*
+*.env
+
+# IntelliJ files
+.idea/
+
+# VSCode files
+.vscode/
+
+# Log files
+logs/
+
+# Mac files
+.DS_STORE
