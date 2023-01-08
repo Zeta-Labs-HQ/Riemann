@@ -1,0 +1,5 @@
+__version__ = "0.2.0"
+__title__ = "riemann"
+__author__ = "Zeta labs"
+__license__ = "MIT"
+__copyright__ = "Copyright (c) 2022 Zeta labs"
